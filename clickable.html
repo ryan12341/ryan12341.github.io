@@ -5,7 +5,13 @@
 		</title>
 		<script>
 			function clickme() {
-				document.getElementById("circle").innerHTML = "DIMMORTALS WHAT IS GOING ON"3;
+				var name = document.getElementById("nameTEXT").value;
+				document.getElementById("circle").innerHTML = "Hello!, " + name + "!";
+			}
+
+			function clickme2() {
+				var name = document.getElementById("nameTEXT").value;
+				document.getElementById("triangle").innerHTML = "sup" + name + "!"
 			}
 		</script>
 	</head>
@@ -16,15 +22,14 @@
 			<a href="aboutme.html" />
 				About me
 			</a>
+			 j  
 			<a href="projects.html">
 				projects
 			</a>
 			
 			<a href="index.html">
 				home
-			</a>
-
-			
+			</a>			
 		</nav>
 		<section style="background-color:blue;color:pink; ">
 			
@@ -33,16 +38,19 @@
 				here comes the son 
 		</section>
 		<section>
-		
-		<div id="circle" style="height: 100px;width:100px; background-color:pink; border-radius:75px;"></div>
-		<img src="https://previews.123rf.com/images/cappan/cappan1412/cappan141200060/34934787-Fire-and-ice-abstract-lightning-background-Stock-Photo.jpg" />
-		<br>
-		Name:
-		<input type="text" value="click me" onclick="click me ();" />
+
+		<div id="\circle" style="height: 100px;width:100px; background-color:pink; border-radius:75px;"></div>
+		<img src="https://previews.123rf.com/images/cappan/cappan1412/cappan141200060/34934787-Fire-and-ice-abstract-lightning-background-Stock-Photo.jpg"/>
+		NAME: <input type="text" id="nameTEXT" value=" " /> 
+		</div>
 
 		</section>		
 		<section>
 			<input type="button" value="click me" onclick="clickme();" />
+
+
+
+
 		</section>
 	</body>
 </html>
